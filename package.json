@@ -1,0 +1,28 @@
+{
+  "name": "phonebook_backend",
+  "version": "1.0.0",
+  "description": "phonebook backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatherineNjeNjenga/Full-Stack-Open-BackEnd.git"
+  },
+  "author": "Catherine Njenga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CatherineNjeNjenga/Full-Stack-Open-BackEnd/issues"
+  },
+  "homepage": "https://github.com/CatherineNjeNjenga/Full-Stack-Open-BackEnd#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
