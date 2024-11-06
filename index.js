@@ -78,14 +78,6 @@ app.post('/api/persons/', (request, response) => {
     })
   }
 
-  const person = {
-    name: body.name,
-    number: body.number,
-    id: String(Math.floor(Math.random() * 500))
-  }
-  console.log(person)
-  persons = persons.concat(person)
-
   for (let person of persons) {
     if (body.name === person.name) {
       return response.status(400).json({
@@ -93,6 +85,14 @@ app.post('/api/persons/', (request, response) => {
       })
     }
   }
+
+  const person = {
+    name: body.name,
+    number: body.number,
+    id: String(Math.floor(Math.random() * 500))
+  }
+  console.log(person)
+  persons = persons.concat(person)
 
   response.json(person)
 })
