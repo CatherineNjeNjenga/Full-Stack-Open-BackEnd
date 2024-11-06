@@ -33,6 +33,10 @@ let persons = [
   }
 ]
 
+app.get('/', (request, response) => {
+  response.send('<h1>Phone Book</>')
+})
+
 app.get('/info', (request, response) => {
   response.send(
     `<p>Phonebook has info for ${persons.length} people
